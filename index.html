@@ -356,8 +356,7 @@ function query1() {
     MP.api.events("event.new_swing",
         params).done(function(results) {
         console.log("Line chart: ") 
-        var data = results.values();
-        };
+        var data = results.values()
         lineChart.MPChart('setData', data);
         
     })
